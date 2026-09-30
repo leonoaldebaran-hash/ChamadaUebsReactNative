@@ -14,6 +14,12 @@
 - No Snack as imagens ficam em `assets/images/` (ex.: `require('../../assets/images/logo.png')`).
 - **Sempre explique linha por linha todo código passado ao aluno** (cada import, cada tag, cada propriedade de estilo). Ao reenviar uma tarefa, envie a tarefa completa, não só o trecho que mudou.
 
+## Design e experiência (UX)
+- A cada tarefa, avalie se o layout e o fluxo estão no padrão de apps do mercado; se não estiverem, sugira melhorias ao aluno antes de seguir.
+- **Login único** (e-mail + senha, Google, "Esqueci minha senha", "Aluno novo? Criar conta"). Não existe tela "Escolha o tipo de acesso": o papel (admin/coordenador/aluno) vem do perfil no Firebase depois do login, como no `handleAuthStateChange` do original.
+- **Cores centralizadas** em `utils/Cores.js`, tiradas do logo: primária azul-marinho `#34497a`, destaque verde `#8cc63f`. Uma cor primária só; hierarquia de botões pelo `CustomButton` com `variante` = `primario` | `contorno` | `link`.
+- Conteúdo com `maxWidth: 400` centralizado (o app é PWA e também abre no PC). Botões com área de toque ≥ 44px.
+
 ## Convenção de nomes (OBRIGATÓRIA, definida pelo aluno)
 - **Pastas**: camelCase, começando com minúscula → `components/customButton/`, `components/textInputBox/`, `screens/login/`, `screens/escolhaAcesso/`
 - **Arquivos de classe/componente/tela**: PascalCase, começando com maiúscula → `CustomButton.js`, `TextInputBox.js`, `LoginScreen.js`, `MathUtils.js`
