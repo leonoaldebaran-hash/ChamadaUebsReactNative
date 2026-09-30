@@ -39,7 +39,9 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 | 9 | Chamada do coordenador (marcar presença e salvar) | 9 e 10 | |
 | 10 | Telas do admin (linhas, alunos, histórico) | 9 e 10 | |
 | 11 | Extras: WhatsApp (`Share`/`Linking`), QR code, fotos | 4 e 11 | |
-| 12 | Preparar para a loja: `app.json` (nome, ícone, `android.package`), projeto local no VS Code | 2 e 7 | |
-| 13 | Gerar o `.aab` (EAS Build) e publicar na Google Play (teste fechado → produção) | 7 | |
+| 12 | Projeto local no VS Code + `app.json` (nome, ícone, `android.package`, `ios.bundleIdentifier`) | 2 e 7 | |
+| 13 | Versão Web/PWA: `npx expo export -p web` e publicar no Firebase Hosting (substitui o PWA antigo) | 2 | |
+| 14 | Android: gerar `.aab` (EAS Build) e publicar na Google Play | 7 | |
+| 15 | iPhone: EAS Build + TestFlight + App Store (requer Apple Developer, US$ 99/ano) | — | |
 
-**Objetivo final:** publicar o app na Google Play Store.
+**Objetivo final:** um só código rodando como PWA (todos), na Google Play (Android) e na App Store (iPhone).
