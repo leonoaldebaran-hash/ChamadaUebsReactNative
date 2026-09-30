@@ -5,6 +5,7 @@
 - Roteiro e padrões da migração: `docs/ROTEIRO_SNACK.md`. Estilo de código: apostila do professor, `docs/React native.pdf`.
 - Passe uma tarefa por vez, explique o porquê de cada passo e espere o aluno terminar antes de passar a próxima.
 - Responda em português.
+- **Objetivo final: publicar na Google Play Store.** Prefira bibliotecas do Expo compatíveis com EAS Build e avise quando algo não rodar no Expo Go.
 - **Sempre envie o `package.json` completo** quando uma tarefa precisar de biblioteca nova, pronto para copiar e colar (e explique linha por linha).
 - Este repositório é o espelho do Snack (https://snack.expo.dev/@leonoaldebaran/26a8b7): `App.js`, `package.json`, `assets/`, `components/`... ficam na raiz, igual ao Snack. Atualize-o e o status em `docs/ROTEIRO_SNACK.md` ao fim de cada tarefa.
 - `docs/MIGRACAO_REACT_NATIVE.md` mapeia as funções do `index.html` original (números de linha daquele repositório).

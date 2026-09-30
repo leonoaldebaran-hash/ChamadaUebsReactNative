@@ -28,7 +28,7 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 
 | # | Tarefa | Capítulo da apostila | Status |
 |---|---|---|---|
-| 1 | Criar o Snack, a estrutura de pastas e o componente `Logo` | 2, 3 e 4 | ⏳ |
+| 1 | Criar o Snack, a estrutura de pastas e o componente `Logo` | 2, 3 e 4 | ✅ |
 | 2 | Componente `CustomButton` e a tela de escolha do tipo de acesso | 3 | |
 | 3 | Componente `TextInputBox` e a tela de login (só visual) | 3 e 4 | |
 | 4 | Pasta `screens/` e navegação entre as telas | 5 e 6 | |
@@ -39,3 +39,7 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 | 9 | Chamada do coordenador (marcar presença e salvar) | 9 e 10 | |
 | 10 | Telas do admin (linhas, alunos, histórico) | 9 e 10 | |
 | 11 | Extras: WhatsApp (`Share`/`Linking`), QR code, fotos | 4 e 11 | |
+| 12 | Preparar para a loja: `app.json` (nome, ícone, `android.package`), projeto local no VS Code | 2 e 7 | |
+| 13 | Gerar o `.aab` (EAS Build) e publicar na Google Play (teste fechado → produção) | 7 | |
+
+**Objetivo final:** publicar o app na Google Play Store.
