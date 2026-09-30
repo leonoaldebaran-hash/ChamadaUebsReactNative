@@ -17,6 +17,8 @@
 ## Design e experiência (UX)
 - A cada tarefa, avalie se o layout e o fluxo estão no padrão de apps do mercado; se não estiverem, sugira melhorias ao aluno antes de seguir.
 - **Login único** (e-mail + senha, Google, "Esqueci minha senha", "Aluno novo? Criar conta"). Não existe tela "Escolha o tipo de acesso": o papel (admin/coordenador/aluno) vem do perfil no Firebase depois do login, como no `handleAuthStateChange` do original.
+- **Perfis múltiplos**: uma conta (um e-mail) pode ter vários papéis: aluno, coordenador e admin (admin pode ser **principal** ou **secundário**). Depois do login, o app monta a lista de perfis da conta: se houver só 1, entra direto; se houver mais, mostra a tela **"Como você quer entrar?"** (cartões por perfil), lembra a última escolha e oferece **"Trocar perfil"** no menu, sem sair da conta. Admin principal x secundário NÃO é outro perfil: é nível de permissão dentro da área Admin (o principal vê também Administradores, Logs, Backup e Conversões).
+- No original: admin principal = e-mail fixo no código (`uebs.firebase@gmail.com`); admin secundário = `users/{uid}.role == 'admin'`; coordenador = existe `admin/coordinators/list/{uid}`; aluno = `role == 'student'` ou vínculo em `student/authLinks/records/{uid}`. Na migração, a proteção real deve estar nas regras do Firestore (não só no app).
 - **Cores centralizadas** em `utils/Cores.js`, tiradas do logo: primária azul-marinho `#34497a`, destaque verde `#8cc63f`. Uma cor primária só; hierarquia de botões pelo `CustomButton` com `variante` = `primario` | `contorno` | `link`.
 - Conteúdo com `maxWidth: 400` centralizado (o app é PWA e também abre no PC). Botões com área de toque ≥ 44px.
 

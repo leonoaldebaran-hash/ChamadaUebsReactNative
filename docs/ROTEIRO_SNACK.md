@@ -34,13 +34,14 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 | 4 | Pasta `screens/` e navegação (login, cadastro de aluno, esqueci a senha) | 5 e 6 | |
 | 5 | Conectar o Firebase (`repository/firebase.js`) | 9 (adaptado) | |
 | 6 | Login funcionando (`repository/authRepository.js`) | 9 e 11 | |
-| 7 | Tela do aluno: ver seus dados e informar presença | 9 e 10 | |
-| 8 | Tela do coordenador: lista de linhas (`FlatList`) | 9 | |
-| 9 | Chamada do coordenador (marcar presença e salvar) | 9 e 10 | |
-| 10 | Telas do admin (linhas, alunos, histórico) | 9 e 10 | |
-| 11 | Extras: WhatsApp (`Share`/`Linking`), QR code, fotos | 4 e 11 | |
-| 12 | Projeto local no VS Code + `app.json` (nome, ícone, cores, configuração web) | 2 | |
-| 13 | PWA: manifest + service worker, `npx expo export -p web` e publicar no Firebase Hosting (substitui o PWA antigo) | 2 | |
+| 7 | Perfis: descobrir os papéis da conta (aluno, coordenador, admin principal/secundário), tela "Como você quer entrar?" e "Trocar perfil" | 5, 6 e 9 | |
+| 8 | Tela do aluno: ver seus dados e informar presença | 9 e 10 | |
+| 9 | Tela do coordenador: lista de linhas (`FlatList`) | 9 | |
+| 10 | Chamada do coordenador (marcar presença e salvar) | 9 e 10 | |
+| 11 | Telas do admin (linhas, alunos, histórico) | 9 e 10 | |
+| 12 | Extras: WhatsApp (`Share`/`Linking`), QR code, fotos | 4 e 11 | |
+| 13 | Projeto local no VS Code + `app.json` (nome, ícone, cores, configuração web) | 2 | |
+| 14 | PWA: manifest + service worker, `npx expo export -p web` e publicar no Firebase Hosting (substitui o PWA antigo) | 2 | |
 
 **Objetivo final:** publicar como PWA no Firebase Hosting, grátis e funcionando para todos (iPhone, Android e PC).
 Como o destino é a Web, tudo precisa funcionar na aba **Web** do Snack (ex.: use `alert('mensagem')` em vez de `Alert.alert`, que não funciona na Web).
