@@ -5,7 +5,8 @@
 - Roteiro e padrões da migração: `docs/ROTEIRO_SNACK.md`. Estilo de código: apostila do professor, `docs/React native.pdf`.
 - Passe uma tarefa por vez, explique o porquê de cada passo e espere o aluno terminar antes de passar a próxima.
 - Responda em português.
-- **Objetivo final: um só código para 3 destinos** — Android (Google Play), iPhone (App Store, se houver conta Apple; senão via web) e **Web/PWA publicado no Firebase Hosting** (`npx expo export -p web`). Prefira bibliotecas do Expo que funcionem em Android, iOS **e** Web, compatíveis com EAS Build; avise quando algo não rodar no Expo Go ou na Web. Oriente testar nas abas Web, Android e iOS do Snack.
+- **Destino único: Web/PWA publicado no Firebase Hosting** (`npx expo export -p web`), gratuito, para iPhone, Android e PC. Não vamos publicar em lojas (Play Store/App Store) nem distribuir APK.
+- Toda biblioteca e componente precisa funcionar **na Web** (react-native-web). Oriente testar principalmente na aba **Web** do Snack e no navegador do celular. Ex.: `Alert.alert` NÃO funciona na Web — mostre mensagens na tela com `useState` (como no capítulo 6 da apostila).
 - O PWA atual (repositório original) continua no ar até a versão nova estar completa.
 - **Sempre envie o `package.json` completo** quando uma tarefa precisar de biblioteca nova, pronto para copiar e colar (e explique linha por linha).
 - Este repositório é o espelho do Snack (https://snack.expo.dev/@leonoaldebaran/26a8b7): `App.js`, `package.json`, `assets/`, `components/`... ficam na raiz, igual ao Snack. Atualize-o e o status em `docs/ROTEIRO_SNACK.md` ao fim de cada tarefa.

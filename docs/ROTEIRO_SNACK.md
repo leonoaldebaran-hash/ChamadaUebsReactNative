@@ -39,9 +39,8 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 | 9 | Chamada do coordenador (marcar presença e salvar) | 9 e 10 | |
 | 10 | Telas do admin (linhas, alunos, histórico) | 9 e 10 | |
 | 11 | Extras: WhatsApp (`Share`/`Linking`), QR code, fotos | 4 e 11 | |
-| 12 | Projeto local no VS Code + `app.json` (nome, ícone, `android.package`, `ios.bundleIdentifier`) | 2 e 7 | |
-| 13 | Versão Web/PWA: `npx expo export -p web` e publicar no Firebase Hosting (substitui o PWA antigo) | 2 | |
-| 14 | Android: gerar `.aab` (EAS Build) e publicar na Google Play | 7 | |
-| 15 | iPhone: EAS Build + TestFlight + App Store (requer Apple Developer, US$ 99/ano) | — | |
+| 12 | Projeto local no VS Code + `app.json` (nome, ícone, cores, configuração web) | 2 | |
+| 13 | PWA: manifest + service worker, `npx expo export -p web` e publicar no Firebase Hosting (substitui o PWA antigo) | 2 | |
 
-**Objetivo final:** um só código rodando como PWA (todos), na Google Play (Android) e na App Store (iPhone).
+**Objetivo final:** publicar como PWA no Firebase Hosting, grátis e funcionando para todos (iPhone, Android e PC).
+Como o destino é a Web, tudo precisa funcionar na aba **Web** do Snack (ex.: `Alert.alert` não funciona na Web).
