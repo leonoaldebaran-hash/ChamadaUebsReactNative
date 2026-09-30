@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "expo-status-bar": "*"
+    "expo-status-bar": "*",
+    "@expo/vector-icons": "*"
   }
 }

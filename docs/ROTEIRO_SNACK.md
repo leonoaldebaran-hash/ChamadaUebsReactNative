@@ -29,7 +29,7 @@ A organização será a mesma: o código do Firebase fica em `repository/`.
 | # | Tarefa | Capítulo da apostila | Status |
 |---|---|---|---|
 | 1 | Criar o Snack, a estrutura de pastas e o componente `Logo` | 2, 3 e 4 | ✅ |
-| 2 | `utils/Cores.js`, `CustomButton` com variantes e o esqueleto da tela de login | 3 e 6 | ⏳ |
+| 2 | `utils/Cores.js`, `CustomButton` com variantes e o esqueleto da tela de login | 3 e 6 | ✅ |
 | 3 | Componente `TextInputBox` e os campos de e-mail e senha no login | 3 e 4 | |
 | 4 | Pasta `screens/` e navegação (login, cadastro de aluno, esqueci a senha) | 5 e 6 | |
 | 5 | Conectar o Firebase (`repository/firebase.js`) | 9 (adaptado) | |
