@@ -18,7 +18,7 @@ export default function App() {
             <MaterialCommunityIcons name="bus-school" size={26} color={Cores.primaria} />
           </Text>
           <Text style={styles.subtitle}>
-            Alunos, coordenadores e administradores
+            Entre com sua conta
           </Text>
 
           <View style={styles.areaCampos}>
